@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+ double distance (double x1, double y1, double x2, double y2)
+
+return sqrt ((×2 - x1) * (x2 - x1) + (y2 - y1) * (y2-y1
+)) ;
+
+｝
+
+  int main() {
+
+double x1 = 0, y1 = 0;
+
+double x2 = 0, y2 = 3;
+
+double x3 = 4, y3 = 0;
+
+double a = distance (×2, y2, ×3, 3); double b = distance(x1, y1, ×3, y3);
+double c = distance(x1, y1, x2, y2);
+
+
+double P = a + b + c;
+
+double s = P / 2;
+double S = sqrt(s * (s - a) * (s - b) * (s - c));
+printf("Периметр Р = %.2f\n", Р);
+printf("Площа S = %. 2fln", S);
+
+return 0;
+
+}
